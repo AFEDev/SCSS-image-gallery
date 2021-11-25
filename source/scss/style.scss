@@ -1,0 +1,70 @@
+@import "nullstyle";
+@import "var";
+@import "mixin";
+@import "_components";
+
+
+
+.container {
+	margin: 0px 20px 0px 20px;
+	min-height: 100%;
+	overflow: hidden;
+
+	.gallery {
+		margin: 0px auto;
+		background: $color_2;
+		
+		.gallery__title {
+			display: block;
+			margin: 0px auto;
+			text-align: center;
+			padding-top: 50px;
+			padding-bottom: 20px;
+			font-size: 60px;
+			font-family: $font_list;
+			font-weight: 400;
+
+			@media all and (max-width: 600px)  {
+				font-size: 30px; }
+		}
+		.gallery__row {
+			display: flex;
+			flex-wrap:wrap;
+			margin: -5px -5px -5px -5px;
+			padding: 10px 10px 10px 10px;
+				}
+
+			.gallery__column {
+				flex: 0 1 33.333%; 
+				padding: 5px 5px 5px 5px;
+
+				@media all and (max-width: 900px)  {
+					flex: 0 1 50%; }
+
+					@media all and (max-width: 600px)  {
+						flex: 0 1 100%; }
+
+				.image-gallery {
+					margin: 0px 0px 0px 0px;
+					padding: 0px 0px 58% 0px;
+					overflow: hidden;
+					position: relative;
+						
+						img{
+							width: 100%;
+							height: 100%;
+							object-fit: cover;
+							position: absolute;
+							top: 0;
+							left: 0;
+							filter: grayscale(100%);
+							
+							&:hover {
+								filter: grayscale(0%);
+							}
+						}	
+					}
+			
+		}
+	}
+}

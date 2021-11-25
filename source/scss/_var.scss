@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "Bona Nova";
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/bonanova/v1/B50NF7ZCpX7fcHfvIUB5gaJrLK8.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+    font-family: 'Comforter';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/comforter/v1/H4clBXOCl8nQnlaql3Qq75u9.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+$fz:32px;
+$color_1:rgb(171, 26, 151);
+$color_2:rgb(101, 165, 243);
+$color_3: rgb(135, 218, 131);
+$font: "Bona Nova" , serif;
+$font_list: "Comforter";
